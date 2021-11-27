@@ -1,0 +1,18 @@
+Package: ttgenome
+Title: genome analysis and visulization tools
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Tong",
+           family = "Zhou",
+           role = c("aut", "cre"),
+           email = "tongzhou2017@gmail.com")
+Description: genome analysis and visulization tools.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports:
+    methods,
+    stringr,
+    utils

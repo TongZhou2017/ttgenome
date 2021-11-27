@@ -1,0 +1,23 @@
+
+==>>genome.fasta<<==
+
+the genome scaffolds number is 5631
+the genome contigs number is 40090
+the longest length is 4583570
+the shortest length is 894
+the genome scaffolds size is 370076467
+the genome contig size is 305666731
+the rate of N is 0.174044398235136
+the rate of GC is 0.392990174648742
+the scaffold N50 is 510298
+the scaffold L50 is 191
+the contig N50 is 15514
+the contig L50 is 5464
+the scaffold N90 is 79687
+the scaffold L90 861
+the contig N90 is 2954
+the contig L90 22373
+the number of sequences >= 1kb is 5488	total length is 369938257
+the number of sequences >= 2kb is 2734	total length is 366330252
+the number of sequences >= 3kb is 2410	total length is 365563381
+
