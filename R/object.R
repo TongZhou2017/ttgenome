@@ -41,6 +41,7 @@ set_divsum <- function(file,species,genome_size) {
   tabel_1_end <- which(stringr::str_detect(divsum_file_content,"^Coverage for each repeat class and divergence"))-1
   divsum_table_1_str <-divsum_file_content[tabel_1_start:tabel_1_end]
   divsum_table_1 <- read.table(text=divsum_table_1_str)
+  names(divsum_table_1)<-c("Class", "Repeat", "absLen", "wellCharLen", "Kimura%")
   tabel_2_start = tabel_1_end +2
   tabel_2_end <- length(divsum_file_content)
   divsum_tabel_2_str <- divsum_file_content[tabel_2_start:tabel_2_end]
