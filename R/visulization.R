@@ -12,9 +12,9 @@
 p3 <- function(object,sublabel=FALSE,keep_unknown=TRUE){
   if(sublabel){
     if(keep_unknown){
-      p <- object@coverage %>% melt("Div") %>% ggplot(aes(x=Div,y=value/object@genome_size*100,fill=variable)) + geom_bar(stat="identity", color="black")+cowplot::theme_cowplot()+scale_fill_brewer(palette="Accent")+ labs(x="Kimura substitution level (CpG adjusted)",y="Percent of genome (%)",title = object@species)
+      p <- object@coverage %>% melt("Div") %>% ggplot(aes(x=Div,y=value/object@genome_size*100,fill=variable)) + geom_bar(stat="identity", color="black")+cowplot::theme_cowplot() + labs(x="Kimura substitution level (CpG adjusted)",y="Percent of genome (%)",title = object@species)
     }else{
-      p <- object@coverage %>% melt("Div") %>% filter(variable != "Unknown") %>% ggplot(aes(x=Div,y=value/object@genome_size*100,fill=variable)) + geom_bar(stat="identity", color="black")+cowplot::theme_cowplot()+scale_fill_brewer(palette="Accent")+ labs(x="Kimura substitution level (CpG adjusted)",y="Percent of genome (%)",title = object@species)
+      p <- object@coverage %>% melt("Div") %>% filter(variable != "Unknown") %>% ggplot(aes(x=Div,y=value/object@genome_size*100,fill=variable)) + geom_bar(stat="identity", color="black")+cowplot::theme_cowplot()+ labs(x="Kimura substitution level (CpG adjusted)",y="Percent of genome (%)",title = object@species)
     }
   }else{
     if(keep_unknown){
