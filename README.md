@@ -17,7 +17,9 @@ library(ttgenome)
 ## Read data
 
 ``` r
-divsum <- set_divsum(system.file("extdata","Adig.genome.fasta.divsum",package = "ttgenome"),"Adig",415842489)
+divsum <- set_divsum(file = system.file("extdata","Adig.genome.fasta.divsum",package = "ttgenome"),
+                    species = "Adig",
+                    genome_size = 415842489)
 ```
 
 ## Visulization
