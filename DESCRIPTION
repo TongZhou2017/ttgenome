@@ -15,4 +15,8 @@ RoxygenNote: 7.1.0
 Imports:
     methods,
     stringr,
-    utils
+    utils,
+    dplyr,
+    ggplot2,
+    reshape2,
+    cowplot

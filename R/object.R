@@ -51,3 +51,20 @@ set_divsum <- function(file,species,genome_size) {
 }
 
 
+# S4 method
+#' show method for S4 class divsum
+#' @param object An object of class divsum
+#' @importMethodsFrom methods show
+#' @export
+setMethod("show",
+          "divsum",
+          function(object) {
+            cat("An object of class \"divsum\" from package ttgenome\n")
+            cat("Species: ", object@species, "\n")
+            cat("Genome size: ", object@genome_size, "\n")
+            cat("\n")
+            cat("Divergenece: ", nrow(object@divergence), "\n")
+            cat("Coverage: ", nrow(object@coverage), "\n")
+          }
+)
+
