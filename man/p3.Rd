@@ -5,7 +5,13 @@
 \title{p3
 p3}
 \usage{
-p3(object, sublabel = FALSE, keep_unknown = TRUE)
+p3(
+  object,
+  sublabel = FALSE,
+  keep_unknown = TRUE,
+  width = 0.5,
+  palette = "Accent"
+)
 }
 \arguments{
 \item{object}{divsum object}
@@ -13,6 +19,10 @@ p3(object, sublabel = FALSE, keep_unknown = TRUE)
 \item{sublabel}{sublabel TRUE/FALSE}
 
 \item{keep_unknown}{keep unknown TRUE/FALSE}
+
+\item{width}{bar width}
+
+\item{palette}{color set: Accent, Dark2, Paired, Pastel1, Pastel2, Set1, Set2, Set3}
 }
 \description{
 p3
