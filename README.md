@@ -35,6 +35,11 @@ p3(divsum,keep_unknown = FALSE)
 ![p2](docs/Rplot01.png)
 
 ``` r
-p3(divsum,sublabel = TRUE,keep_unknown = FALSE)
+p3(divsum,sublabel = "6",keep_unknown = FALSE)
 ```
-![p3](docs/plot_zoom.png)
+![p3](docs/plot_zoom_6.png)
+
+``` r
+p3(divsum,sublabel = "All",keep_unknown = FALSE)
+```
+![p4](docs/plot_zoom.png)

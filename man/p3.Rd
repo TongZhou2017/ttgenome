@@ -5,18 +5,12 @@
 \title{p3
 p3}
 \usage{
-p3(
-  object,
-  sublabel = FALSE,
-  keep_unknown = TRUE,
-  width = 0.5,
-  palette = "Accent"
-)
+p3(object, sublabel = 4, keep_unknown = TRUE, width = 0.5, palette = "Accent")
 }
 \arguments{
 \item{object}{divsum object}
 
-\item{sublabel}{sublabel TRUE/FALSE}
+\item{sublabel}{sublabel All, 4, 6}
 
 \item{keep_unknown}{keep unknown TRUE/FALSE}
 
